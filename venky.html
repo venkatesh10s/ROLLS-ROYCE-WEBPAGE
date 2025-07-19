@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Main1{
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+        }
+        #Main1_Image{
+            width: 100vw;
+            height: 100vh;
+            transition: all 2s ease-in-out;
+        }
+        .Main1:hover #Main1_Image{
+            transform: scale(1.1);
+        }
+        .Sub11{
+            top: 20px;
+            right: 10px;
+            position: absolute;
+        }
+        #Sub11_Image{
+            width: 150px;
+        }
+        .Sub12{
+            top: 10px;
+            left: 20px;
+            position: absolute;         
+        }
+        #Sub12_Image{
+            width: 140px;
+        }
+        .Sub13{
+            position: absolute;
+            top: 160px;
+            left: 50px;
+            color: white;
+            font-size: larger;
+        }
+        .Sub13 td{
+            padding-bottom: 40px;
+            transition: all 0.5s ease-in-out;
+        }
+        .Sub13 td:hover{
+            color: red;
+            transform: scale(1.1);
+            padding-left: 20px;
+        }
+        .Sub14{
+            height: 20vh;
+            width: 100vw;
+            color: gold;
+            position: absolute;
+            bottom: 480px;
+            font-size: xx-large;
+            text-align: center;
+        }
+        .Main2{
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            background-color:black;    
+        }
+        .Sub21{
+            text-align: center;
+            color: white;
+            font-size: large;
+            position:absolute;
+            left: 5vw;
+            top: 30vh;
+            width: 40vw;
+            height: 40vh;        
+        }
+        .Sub22{
+            position: absolute;
+            top: 0vh;
+            right: 0vw;
+            width: 50vw;
+            height: 100vh;
+            
+        }
+        .Sub22 img{
+            width: 50vw;
+            height: 100vh;
+        }
+        .Sub23{
+            position: absolute;
+            left: 100vw;
+            width: 100vw;
+            height: 100vh;
+            background-color: skyblue;
+            transition: all 2s ease-in-out;
+        }
+        .Main2:hover .Sub23{
+            left: 50vw;
+            transition-delay: 0.4s;
+        }
+        .Sub23 img{
+            width: 100vw;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="Main1">
+        <img src="https://wallpapercat.com/w/full/0/9/2/1749310-2249x1500-desktop-hd-rolls-royce-ghost-wallpaper-image.jpg" id="Main1_Image">
+
+        <div class="Sub11">
+         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFaACyx8hlYeDLDNd-6evVOmoj-BBjGG37oA&s" id="Sub11_Image">
+        </div>
+
+        <div class="Sub12">
+            <img src="data:image/png;base64,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" id="Sub12_Image">
+        </div>
+
+        <div class="Sub13">
+            <table>
+                <tr>
+                    <td>Home</td>
+                </tr>
+                <tr>
+                    <td>Racing</td>
+                </tr>
+                <tr>
+                    <td>Models</td>
+                </tr>
+                <tr>
+                    <td>About</td>
+                </tr>
+                <tr>
+                    <td>Login</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="Sub14">
+        <h1>ROLLS ROYCE</h1>
+        </div>
+    </div>
+
+    <div class="Main2">
+
+        <div class="Sub21">
+            <h1>Rolls <span>Royce</span></h1>
+            <p>Rolls-Royce is a British luxury automobile maker that has been operating as a subsidiary of BMW since 2003. The company is known for its high-end vehicles like the Phantom, Cullinan, and Ghost. Rolls-Royce also has a history in aerospace and defense, with Rolls-Royce Holdings plc being a separate multinational entity focused on power systems for aviation and other industries.</p>
+            <br>
+
+        </div>
+
+        <div class="Sub22">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuWW4gIhiBvzVbbyJgw8lR3NE9C8OXSNJ6CQ&s">
+
+        </div>
+
+        <div class="Sub23">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX2fO7YL0UuItHDhVct2xWRcwvFzhvVBMC3A&s">
+        </div>
+
+    </div>
+</body>
+</html>
